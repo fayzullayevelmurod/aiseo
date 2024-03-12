@@ -333,6 +333,62 @@ header .burger_btn {
   line-height: 21.7px;
 }
 
+.tarif {
+  padding: 100px 0 45px 0;
+  background: rgb(238, 238, 238);
+}
+.tarif .tarif_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 35px;
+}
+.tarif .tarif_in {
+  display: flex;
+  align-items: stretch;
+  gap: 30px;
+}
+.tarif .tarif_card {
+  text-align: center;
+  padding: 85px 48px 45px 48px;
+  border: 1px solid rgb(224, 230, 237);
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.tarif .tarif_card h6 {
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 22.95px;
+  margin-bottom: 35px;
+}
+.tarif .tarif_card .tarif_card_bottom {
+  margin-top: auto;
+}
+.tarif .tarif_card h5 {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 27px;
+}
+.tarif .tarif_card .main_btn {
+  margin-top: 35px;
+  border-radius: 100px;
+  padding: 20px 60px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+.tarif .tarif_card_center {
+  padding: 85px 48px 45px 48px;
+}
+
 @media only screen and (max-width: 993px) {
   .title_top {
     font-size: 16px;

@@ -399,5 +399,69 @@ header {
 }
 // step_work
 
+// tarif
+.tarif {
+    padding: 100px 0 45px 0;
+    background: rgb(238, 238, 238);
+
+    .tarif_title {
+        @include flex-full-center();
+        flex-direction: column;
+        margin-bottom: 35px;
+    }
+
+    .tarif_in {
+        display: flex;
+        align-items: stretch;
+        gap: 30px;
+    }
+
+    .tarif_card {
+        text-align: center;
+        padding: 85px 48px 45px 48px;
+        border: 1px solid rgb(224, 230, 237);
+        border-radius: 15px;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+        background: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h6 {
+            color: rgb(0, 0, 0);
+            font-size: 17px;
+            font-weight: 600;
+            line-height: 22.95px;
+            margin-bottom: 35px;
+        }
+
+        .tarif_card_bottom {
+            margin-top: auto;
+        }
+
+        h5 {
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 27px;
+        }
+
+        .main_btn {
+            margin-top: 35px;
+            border-radius: 100px;
+            padding: 20px 60px;
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+        }
+    }
+
+    .tarif_card_center {
+        padding: 85px 48px 45px 48px;
+    }
+}
+// tarif
+
 
 @import './responsive';

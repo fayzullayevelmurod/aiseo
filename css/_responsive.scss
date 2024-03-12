@@ -35,6 +35,8 @@
     }
 
     .home {
+        padding: 40px 0;
+        height: auto;
         .main_container {
             flex-direction: column;
             align-items: center;
@@ -57,7 +59,7 @@
         .step_work_title  {
             margin-bottom: 30px;
         }
-        
+
         .step_work_in {
             gap: 30px;
         }

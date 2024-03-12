@@ -290,6 +290,10 @@ header .burger_btn {
     right: 15px;
     z-index: 3;
   }
+  .home {
+    padding: 40px 0;
+    height: auto;
+  }
   .home .main_container {
     flex-direction: column;
     align-items: center;

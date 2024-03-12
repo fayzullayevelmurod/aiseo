@@ -31,8 +31,7 @@
 // mixin
 
 // fonts
-$fonts-Roboto: "Roboto", sans-serif;
-$fonts-Inter: "Inter", sans-serif;
+$font-Roboto: "Roboto", sans-serif;
 // fonts
 
 * {
@@ -61,7 +60,7 @@ html {
 }
 
 body {
-    $fonts-Inter: "Inter", sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
 }
 
@@ -90,8 +89,15 @@ button {
 
 // header
 header {
+    background-color: white;
+    padding: 14px 0;
+
     .header_top {
         @include flex-center();
+    }
+
+    .header_bottom {
+        display: none;
     }
 
     nav {
@@ -105,14 +111,53 @@ header {
         a {
             color: rgb(29, 29, 29);
             font-size: 13px;
-            font-weight: 400;
+            font-weight: 500;
             line-height: 20px;
+            @include transition();
+
+            &:hover {
+                opacity: .7;
+            }
         }
     }
 
     .header_contact {
-        margin-left: 30px;
+        margin-left: 20px;
         @include flex-center();
+        gap: 7px;
+
+        a {
+            @include flex-full-center();
+            color: rgb(29, 29, 29);
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 20px;
+            
+            img {
+                @include transition();
+                
+                &:hover {
+                    opacity: .7;
+                }
+            }
+        }
+        
+        
+        button {
+            margin-left: 10px;
+            color: rgb(255, 255, 255);
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 20.15px;
+            border-radius: 100px;
+            background: linear-gradient(0.00deg, rgb(252, 82, 35),rgb(252, 109, 69) 100%);
+            padding: 10px 20px;
+            @include transition();
+
+            &:hover {
+                background: linear-gradient(0.00deg, rgb(255, 66, 14),rgb(255, 93, 48) 100%); 
+            }
+        }
     }
 
     .burger_btn {
@@ -120,3 +165,72 @@ header {
     }
 }
 // header
+
+// home
+.home {
+    height: 100dvh;
+    background-image: url('https://static.tildacdn.com/tild3563-3262-4533-a436-336638363733/vivid-blurred-colorf.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    background-attachment: fixed;
+    @include flex-center();
+
+    .main_container {
+        width: 100%;
+        @include flex-center();
+        justify-content: space-between;
+    }
+
+    h1 {
+        max-width: 575px;
+        color: rgb(255, 255, 255);
+        font-size: 45px;
+        font-weight: 400;
+        line-height: 52.65px;
+        margin-bottom: 18px;
+    }
+
+    .home_left {
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 27px;
+        }
+
+        li {
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 27.9px;
+            max-width: 500px;
+        }
+    }
+
+    .home_right {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+
+        li {
+            @include flex-center();
+            gap: 35px;
+        }
+
+        img {
+            width: 45px;
+        }
+
+        p {
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 24.8px;
+            max-width: 265px;
+        }
+    }
+}
+// home

@@ -24,6 +24,7 @@ html {
 }
 
 body {
+  font-family: "Inter", sans-serif;
   font-style: normal;
 }
 
@@ -50,9 +51,16 @@ button {
   margin: 0 auto;
 }
 
+header {
+  background-color: white;
+  padding: 14px 0;
+}
 header .header_top {
   display: flex;
   align-items: center;
+}
+header .header_bottom {
+  display: none;
 }
 header nav {
   margin-left: auto;
@@ -65,14 +73,108 @@ header .nav_link {
 header .nav_link a {
   color: rgb(29, 29, 29);
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 20px;
+  transition: 0.2s ease;
+}
+header .nav_link a:hover {
+  opacity: 0.7;
 }
 header .header_contact {
-  margin-left: 30px;
+  margin-left: 20px;
   display: flex;
   align-items: center;
+  gap: 7px;
+}
+header .header_contact a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(29, 29, 29);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+}
+header .header_contact a img {
+  transition: 0.2s ease;
+}
+header .header_contact a img:hover {
+  opacity: 0.7;
+}
+header .header_contact button {
+  margin-left: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 20.15px;
+  border-radius: 100px;
+  background: linear-gradient(0deg, rgb(252, 82, 35), rgb(252, 109, 69) 100%);
+  padding: 10px 20px;
+  transition: 0.2s ease;
+}
+header .header_contact button:hover {
+  background: linear-gradient(0deg, rgb(255, 66, 14), rgb(255, 93, 48) 100%);
 }
 header .burger_btn {
   display: none;
+}
+
+.home {
+  height: 100dvh;
+  background-image: url("https://static.tildacdn.com/tild3563-3262-4533-a436-336638363733/vivid-blurred-colorf.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+}
+.home .main_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home h1 {
+  max-width: 575px;
+  color: rgb(255, 255, 255);
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 52.65px;
+  margin-bottom: 18px;
+}
+.home .home_left ul {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+.home .home_left li {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27.9px;
+  max-width: 500px;
+}
+.home .home_right {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.home .home_right li {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+.home .home_right img {
+  width: 45px;
+}
+.home .home_right p {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24.8px;
+  max-width: 265px;
 }/*# sourceMappingURL=style.css.map */

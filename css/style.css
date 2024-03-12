@@ -218,6 +218,7 @@ header .burger_btn {
   margin-bottom: 72px;
 }
 .step_work .title {
+  margin-top: 6px;
   max-width: 489px;
 }
 .step_work .step_work_in {
@@ -260,4 +261,99 @@ header .burger_btn {
   font-size: 14px;
   font-weight: 300;
   line-height: 21.7px;
+}
+
+@media only screen and (max-width: 993px) {
+  .title_top {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  .title {
+    font-size: 29px;
+    font-weight: 500;
+    line-height: 35px;
+  }
+  header .header_top {
+    justify-content: center;
+  }
+  header .header_contact {
+    margin-left: 50px;
+  }
+  header nav {
+    display: none;
+  }
+  header .burger_btn {
+    display: block;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 3;
+  }
+  .home .main_container {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    max-width: 600px;
+  }
+  .home .home_right {
+    width: 100%;
+  }
+  .home .home_right p {
+    max-width: 100%;
+  }
+  .step_work {
+    padding: 60px 0;
+  }
+  .step_work .step_work_title {
+    margin-bottom: 30px;
+  }
+  .step_work .step_work_in {
+    gap: 30px;
+  }
+  .step_work .step_work_card {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  header .header_contact button {
+    display: none;
+  }
+  .home h1 {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 35.1px;
+    margin-bottom: 14px;
+  }
+  .home .home_left .main_btn {
+    padding: 20px 35px;
+    margin-top: 20px;
+  }
+  .home .home_right {
+    gap: 35px;
+  }
+  .home .home_right li {
+    gap: 30px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  header .header_top {
+    margin-bottom: 10px;
+  }
+  header .header_top .header_contact {
+    display: none;
+  }
+  header .header_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  header .header_bottom .messanger {
+    width: 30px;
+    height: 30px;
+  }
+  header .header_bottom .messanger img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

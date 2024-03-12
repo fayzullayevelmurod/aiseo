@@ -275,6 +275,7 @@ header {
     }
 
     .title {
+        margin-top: 6px;
         max-width: 489px;
     }
 
@@ -322,3 +323,6 @@ header {
     }
 }
 // step_work
+
+
+@import './responsive';

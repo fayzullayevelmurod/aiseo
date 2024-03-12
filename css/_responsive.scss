@@ -1,0 +1,133 @@
+@media only screen and (max-width: 993px) {
+    .title_top {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    
+    .title {
+        font-size: 29px;
+        font-weight: 500;
+        line-height: 35px;
+    }
+
+    header {
+
+        .header_top {
+            justify-content: center;
+        }
+
+        .header_contact {
+            margin-left: 50px;
+        }
+
+        nav {
+            display: none;
+        }
+
+        .burger_btn {
+            display: block;
+            position: fixed;
+            top: 15px;
+            right: 15px;
+            z-index: 3;
+        }
+    }
+
+    .home {
+        .main_container {
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+            max-width: 600px;
+        }
+
+        .home_right {
+            width: 100%;
+
+            p {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .step_work {
+        padding: 60px 0;
+
+        .step_work_title  {
+            margin-bottom: 30px;
+        }
+        
+        .step_work_in {
+            gap: 30px;
+        }
+
+        .step_work_card {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    header {
+        .header_contact {
+            button {
+                display: none;
+            }
+        }
+    }
+
+    .home {
+
+        h1 {
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 35.1px;
+            margin-bottom: 14px;
+        }
+
+        .home_left {
+            .main_btn {
+                padding: 20px 35px;
+                margin-top: 20px;
+            }
+        }
+
+        .home_right {
+            gap: 35px;
+
+            li {
+                gap: 30px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header {
+
+        .header_top {
+            margin-bottom: 10px;
+            .header_contact {
+                display: none;
+            }
+        }
+
+        .header_bottom {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            .messanger {
+                width: 30px;
+                height: 30px;
+
+                img {
+                    
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

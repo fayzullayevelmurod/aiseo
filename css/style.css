@@ -434,6 +434,51 @@ header .burger_btn {
   height: 411px;
 }
 
+.answer {
+  overflow: hidden;
+  padding: 80px 0;
+  background-image: url("../images/answer_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+}
+.answer .answer_line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: 0 auto;
+}
+.answer .main_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+.answer h6 {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 50px;
+  max-width: 856px;
+}
+.answer .main_btn {
+  border-radius: 100px;
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 26.35px;
+  padding: 30px 80px;
+}
+.answer p {
+  max-width: 483px;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
 @media only screen and (max-width: 993px) {
   .title_top {
     font-size: 16px;

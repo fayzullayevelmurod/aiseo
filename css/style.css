@@ -451,6 +451,8 @@ header .burger_btn {
   margin: 0 auto;
 }
 .answer .main_container {
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -477,6 +479,71 @@ header .burger_btn {
   font-size: 14px;
   font-weight: 300;
   line-height: 22px;
+}
+
+.result {
+  padding: 120px 0 75px 0;
+}
+.result .result_title {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.result .result_title .title {
+  max-width: 724px;
+}
+.result .result_slider {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+.result .result_card {
+  cursor: pointer;
+  background: rgb(230, 238, 242);
+  overflow: hidden;
+  border-radius: 15px;
+}
+.result .result_card img {
+  width: 100%;
+}
+.result .result_card .result_card_content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.result .result_card h5 {
+  color: rgb(51, 51, 51);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 2.5px;
+  margin-bottom: 7px;
+}
+.result .result_card h6 {
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20.25px;
+  margin-bottom: 7px;
+}
+.result .result_card p {
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21.7px;
+}
+.result .result_card .main_btn {
+  margin-top: 20px;
+  width: 145px;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  padding: 15px 30px;
+  border-radius: 100px;
 }
 
 @media only screen and (max-width: 993px) {

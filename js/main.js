@@ -1,16 +1,17 @@
 var swiper = new Swiper(".resultSwiper", {
+    loop: true,
     breakpoints: {
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 20,
+        280: {
+          slidesPerView: 1,
+          spaceBetween: 30,
         },
         768: {
-          slidesPerView: 4,
+          slidesPerView: 2,
           spaceBetween: 40,
         },
-        1024: {
-          slidesPerView: 5,
-          spaceBetween: 50,
+        993: {
+          slidesPerView: 3,
+          spaceBetween: 40,
         },
     },
     navigation: {

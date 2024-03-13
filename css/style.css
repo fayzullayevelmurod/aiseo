@@ -346,12 +346,14 @@ header .burger_btn {
 }
 .tarif .tarif_in {
   display: flex;
-  align-items: stretch;
+  align-items: center;
   gap: 30px;
 }
 .tarif .tarif_card {
+  height: 746px;
+  flex: 1;
   text-align: center;
-  padding: 85px 48px 45px 48px;
+  padding: 45px 30px;
   border: 1px solid rgb(224, 230, 237);
   border-radius: 15px;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
@@ -365,16 +367,27 @@ header .burger_btn {
   font-size: 17px;
   font-weight: 600;
   line-height: 22.95px;
-  margin-bottom: 35px;
+  margin: 40px 0 35px 0;
 }
 .tarif .tarif_card .tarif_card_bottom {
-  margin-top: auto;
+  margin-top: 35px;
 }
 .tarif .tarif_card h5 {
   color: rgb(0, 0, 0);
   font-size: 20px;
   font-weight: 500;
   line-height: 27px;
+}
+.tarif .tarif_card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.tarif .tarif_card ul li {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24.8px;
 }
 .tarif .tarif_card .main_btn {
   margin-top: 35px;
@@ -384,9 +397,41 @@ header .burger_btn {
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
+  background: linear-gradient(0deg, rgb(49, 49, 49), rgb(74, 74, 74) 100%);
+}
+.tarif .tarif_card .main_btn:hover {
+  background: linear-gradient(0deg, rgb(254, 62, 9), rgb(254, 92, 47) 100%);
 }
 .tarif .tarif_card_center {
-  padding: 85px 48px 45px 48px;
+  height: 786px;
+  padding: 65px 30px;
+}
+.tarif .tarif_card_center .main_btn {
+  background: linear-gradient(0deg, rgb(252, 82, 35), rgb(252, 109, 69) 100%);
+}
+
+.video {
+  padding: 100px 0 40px 0;
+}
+.video .tarif_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 40px;
+}
+.video .tarif_title .title {
+  max-width: 500px;
+}
+.video .video_in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video .video_in iframe {
+  width: 744px;
+  height: 411px;
 }
 
 @media only screen and (max-width: 993px) {

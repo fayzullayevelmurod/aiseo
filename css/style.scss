@@ -412,13 +412,15 @@ header {
 
     .tarif_in {
         display: flex;
-        align-items: stretch;
+        align-items: center;
         gap: 30px;
     }
 
     .tarif_card {
+        height: 746px;
+        flex: 1;
         text-align: center;
-        padding: 85px 48px 45px 48px;
+        padding: 45px 30px;
         border: 1px solid rgb(224, 230, 237);
         border-radius: 15px;
         box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
@@ -432,11 +434,11 @@ header {
             font-size: 17px;
             font-weight: 600;
             line-height: 22.95px;
-            margin-bottom: 35px;
+            margin: 40px 0 35px 0;
         }
 
         .tarif_card_bottom {
-            margin-top: auto;
+            margin-top: 35px;
         }
 
         h5 {
@@ -444,6 +446,19 @@ header {
             font-size: 20px;
             font-weight: 500;
             line-height: 27px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            li {
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 24.8px;
+            }
         }
 
         .main_btn {
@@ -454,14 +469,49 @@ header {
             font-size: 16px;
             font-weight: 400;
             line-height: 19px;
+            background: linear-gradient(0.00deg, rgb(49, 49, 49),rgb(74, 74, 74) 100%);
+
+            &:hover {
+                background: linear-gradient(0.00deg, rgb(254, 62, 9),rgb(254, 92, 47) 100%);
+            }
         }
     }
 
     .tarif_card_center {
-        padding: 85px 48px 45px 48px;
+        height: 786px;
+        padding: 65px 30px;
+
+        .main_btn {
+            background: linear-gradient(0.00deg, rgb(252, 82, 35),rgb(252, 109, 69) 100%);
+        }
     }
 }
 // tarif
+
+// video
+.video {
+    padding: 100px 0 40px 0;
+
+    .tarif_title {
+        @include flex-full-center();
+        flex-direction: column;
+        gap: 6px;
+        margin-bottom: 40px;
+
+        .title {
+            max-width: 500px;
+        }
+    }
+
+    .video_in {
+        @include flex-full-center();
+        iframe {
+            width: 744px;
+            height: 411px;
+        }
+    }
+}
+// video
 
 
 @import './responsive';

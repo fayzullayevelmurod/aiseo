@@ -28,6 +28,26 @@ body {
   font-style: normal;
 }
 
+[data-aos-duration="4000"] [data-aos],
+[data-aos][data-aos][data-aos-duration="4000"] {
+  transition-duration: 4000ms;
+}
+
+[data-aos-duration="3000"] [data-aos],
+[data-aos][data-aos][data-aos-duration="3000"] {
+  transition-duration: 3000ms;
+}
+
+[data-aos-duration="5000"] [data-aos],
+[data-aos][data-aos][data-aos-duration="5000"] {
+  transition-duration: 5000ms;
+}
+
+[data-aos-duration="7000"] [data-aos],
+[data-aos][data-aos][data-aos-duration="7000"] {
+  transition-duration: 7000ms;
+}
+
 input {
   outline: none;
 }
@@ -159,16 +179,17 @@ button {
 }
 
 .modal_contact {
-  display: none;
   position: fixed;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  opacity: 0;
+  transform: translate(-50%, 100%) scale(0);
   z-index: 6;
   background-color: #fff;
   width: 550px;
   padding: 40px 45px;
   border-radius: 15px;
+  transition: 0.5s ease;
 }
 .modal_contact h6 {
   text-align: center;
@@ -216,7 +237,8 @@ button {
 }
 
 .modal_contact.active {
-  display: block;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
 }
 
 header {

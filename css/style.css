@@ -645,6 +645,74 @@ header .burger_btn {
   color: #000000;
 }
 
+footer {
+  padding: 40px 0;
+}
+footer .footer_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footer_link {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+footer .footer_contact {
+  display: flex;
+  align-items: center;
+}
+footer .footer_contact span {
+  color: rgb(255, 115, 77);
+  margin-right: 25px;
+}
+footer .social_media_bottom {
+  display: flex;
+  justify-content: flex-end;
+}
+footer .social_media_bottom .main_btn {
+  margin-top: 15px;
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 20.15px;
+  padding: 12px 70px;
+  border-radius: 100px;
+}
+footer .socila_icon {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+footer .social_media_top {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+footer .social_media_top .phone_number {
+  margin-right: 10px;
+}
+footer p {
+  color: rgb(45, 45, 45);
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 19px;
+  max-width: 310px;
+}
+footer .footer_bottom_link {
+  margin-top: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+footer .footer_bottom_link a {
+  color: rgb(110, 110, 110);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
 @media only screen and (max-width: 1200px) {
   .tarif .tarif_card {
     height: 796px;
@@ -777,6 +845,43 @@ header .burger_btn {
   }
   .faq .faq_in .accordion .accordion-content p {
     font-size: 14px;
+  }
+  footer .footer_top {
+    flex-direction: column;
+    gap: 30px;
+  }
+  footer .social_media_bottom {
+    justify-content: center;
+  }
+  footer .social_media_bottom .main_btn {
+    padding: 12px 72px;
+  }
+  footer .social_media_top {
+    flex-direction: column;
+  }
+  footer .social_media_top span {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  footer .footer_bottom_link {
+    margin-top: 0;
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+  footer .footer_bottom {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  footer .footer_bottom p {
+    order: 2;
+    max-width: 340px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  footer .footer_bottom .footer_bottom_link {
+    order: 1;
   }
 }
 @media only screen and (max-width: 640px) {

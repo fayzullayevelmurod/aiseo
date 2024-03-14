@@ -176,6 +176,53 @@
             }
         }
     }
+
+    footer {
+        .footer_top {
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .social_media_bottom  {
+            justify-content: center;
+            .main_btn {
+                padding: 12px 72px;
+            }
+        }
+
+        .social_media_top {
+            flex-direction: column;
+
+            span {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+
+        .footer_bottom_link {
+            margin-top: 0;
+            flex-direction: column-reverse;
+            gap: 10px;
+        }
+
+        .footer_bottom {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            
+            p {
+                order: 2;
+                max-width: 340px;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .footer_bottom_link {
+                order: 1;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 640px) {

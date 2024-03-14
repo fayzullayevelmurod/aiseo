@@ -21,6 +21,23 @@ var swiper = new Swiper(".resultSwiper", {
 });
 
 
+const items = document.querySelectorAll('.accordion button');
+
+function toggleAccordion() {
+  const itemToggle = this.getAttribute('aria-expanded');
+
+  for (i = 0; i < items.length; i++) {
+    items[i].setAttribute('aria-expanded', 'false');
+  }
+
+  if (itemToggle == 'false') {
+    this.setAttribute('aria-expanded', 'true');
+  }
+}
+
+items.forEach((item) => item.addEventListener('click', toggleAccordion));
+
+
 let media_menu = document.querySelector('.media_menu');
 let medu_close = document.querySelector('.medu_close');
 let media_menu_bg = document.querySelector('.media_menu_bg');

@@ -1,3 +1,15 @@
+@media only screen and (max-width: 1200px) {
+    .tarif {
+        .tarif_card {
+            height: 796px;
+        }
+
+        .tarif_card_center {
+            height: 820px;
+        }
+    }
+}
+
 @media only screen and (max-width: 993px) {
     .title_top {
         font-size: 16px;
@@ -69,10 +81,40 @@
 
         .step_work_in {
             gap: 30px;
+            max-width: 600px;
+            margin: 0 auto;
         }
 
         .step_work_card {
             width: 100%;
+        }
+    }
+
+    .tarif {
+        padding: 60px 0;
+        .tarif_in {
+            flex-direction: column;
+        }
+
+        .tarif_card {
+            width: 600px;
+        }
+    }
+
+    .answer {
+        padding: 60px 0 ;
+        background-position: center center;
+        h6 {
+            font-size: 26px;
+            line-height: 33px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        .main_btn {
+            padding: 30px 60px;
         }
     }
 }
@@ -107,6 +149,29 @@
 
             li {
                 gap: 30px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .tarif {
+        padding: 60px 0 40px 0;
+        .tarif_card {
+            width: 100%;
+
+            .main_btn {
+                padding: 20px 30px;
+            }
+        }
+    }
+
+    .video {
+        padding: 60px 0 40px 0;
+        .video_in {
+            iframe {
+                width: 100%;
+                height: 220px;
             }
         }
     }

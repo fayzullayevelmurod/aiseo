@@ -524,6 +524,7 @@ header {
     position: relative;
 
     .answer_line {
+        height: 100%;
         position: absolute;
         left: 0;
         right: 0;
@@ -584,8 +585,26 @@ header {
     }
 
     .result_slider {
+        position: relative;
         padding: 0 20px;
-        @include flex-center();
+
+        button {
+            position: absolute;
+            z-index: 2;
+            top: 45%;
+        }
+
+        .result-button-prev {
+            left: 20px;
+        }
+
+        .result-button-next {
+            right: 20px;
+        }
+    }
+
+    .swiper-wrapper {
+        align-items: stretch;
     }
 
     .result_card {

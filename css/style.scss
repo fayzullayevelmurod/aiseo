@@ -664,21 +664,28 @@ header {
 
 // faq
 .faq {
+    padding: 100px 0 20px 0;
+    background: rgb(238, 238, 238);
     .faq_title {
         text-align: center;
         max-width: 558px;
-        margin: 0 auto;
+        margin: 0 auto 20px auto;
     }
     .faq_in {
         .accordion {
             .accordion-item {
-                border-bottom: 1px solid #e5e5e5;
+                border-bottom: 1px solid #c3c3c3;
 
                 .icon {
                     border-radius: 50%;
                     width: 40px;
                     height: 40px;
                     @include transition();
+
+                    svg {
+                        width: 40px !important;
+                        height: 40px !important;
+                    }
                 }
 
                 button {
@@ -689,14 +696,19 @@ header {
 
                 &:hover {
                     .icon {
+                        flex-shrink: 0;
                         background-color: coral;
-                        img {
-                            filter: grayscale(100%) brightness(200%);
-                            -webkit-filter: grayscale(100%) brightness(200%);
-                            -moz-filter: grayscale(100%) brightness(200%);
+                        svg {
+                            path {
+                                stroke: white;
+                            }
                         }
                     }
                 }
+            }
+
+            .accordion_one {
+                border-top: 1px solid #c3c3c3;
             }
               
             .accordion-item button[aria-expanded='true'] {
@@ -720,6 +732,7 @@ header {
             }
               
             .accordion-title {
+                margin-right: 50px;
                 font-family: "Stolzl", "Arial", sans-serif;
                 color: rgb(0, 0, 0);
                 font-size: 18px;
@@ -732,7 +745,7 @@ header {
               }
                button[aria-expanded='true'] + .accordion-content {
                 opacity: 1;
-                max-height: 9em;
+                max-height: 30em;
                 transition: all 200ms linear;
                 will-change: opacity, max-height;
               }

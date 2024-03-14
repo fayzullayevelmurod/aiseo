@@ -560,13 +560,17 @@ header .burger_btn {
   border-radius: 100px;
 }
 
+.faq {
+  padding: 100px 0 20px 0;
+  background: rgb(238, 238, 238);
+}
 .faq .faq_title {
   text-align: center;
   max-width: 558px;
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
 }
 .faq .faq_in .accordion .accordion-item {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #c3c3c3;
 }
 .faq .faq_in .accordion .accordion-item .icon {
   border-radius: 50%;
@@ -574,18 +578,24 @@ header .burger_btn {
   height: 40px;
   transition: 0.2s ease;
 }
+.faq .faq_in .accordion .accordion-item .icon svg {
+  width: 40px !important;
+  height: 40px !important;
+}
 .faq .faq_in .accordion .accordion-item button {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .faq .faq_in .accordion .accordion-item:hover .icon {
+  flex-shrink: 0;
   background-color: coral;
 }
-.faq .faq_in .accordion .accordion-item:hover .icon img {
-  filter: grayscale(100%) brightness(200%);
-  -webkit-filter: grayscale(100%) brightness(200%);
-  -moz-filter: grayscale(100%) brightness(200%);
+.faq .faq_in .accordion .accordion-item:hover .icon svg path {
+  stroke: white;
+}
+.faq .faq_in .accordion .accordion_one {
+  border-top: 1px solid #c3c3c3;
 }
 .faq .faq_in .accordion .accordion-item button[aria-expanded=true] .icon {
   transform: rotate(45deg);
@@ -604,6 +614,7 @@ header .burger_btn {
   outline: none;
 }
 .faq .faq_in .accordion .accordion-title {
+  margin-right: 50px;
   font-family: "Stolzl", "Arial", sans-serif;
   color: rgb(0, 0, 0);
   font-size: 18px;
@@ -615,7 +626,7 @@ header .burger_btn {
 }
 .faq .faq_in .accordion button[aria-expanded=true] + .accordion-content {
   opacity: 1;
-  max-height: 9em;
+  max-height: 30em;
   transition: all 200ms linear;
   will-change: opacity, max-height;
 }
@@ -728,6 +739,44 @@ header .burger_btn {
   }
   .answer .main_btn {
     padding: 30px 60px;
+  }
+  .result {
+    padding: 60px 0;
+  }
+  .result .result_slider button img {
+    width: 24px;
+  }
+  .result .result_slider .result-button-prev {
+    left: 10px;
+  }
+  .result .result_slider .result-button-next {
+    right: 10px;
+  }
+  .faq {
+    padding: 60px 0 10px 0;
+  }
+  .faq .faq_in .accordion button {
+    padding: 15px 0;
+  }
+  .faq .faq_in .accordion .accordion-title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22.3px;
+  }
+  .faq .faq_in .accordion .accordion-item .icon {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+  }
+  .faq .faq_in .accordion .accordion-item .icon svg {
+    width: 20px !important;
+    height: 20px !important;
+  }
+  .faq .faq_in .accordion .accordion-content p {
+    font-size: 14px;
   }
 }
 @media only screen and (max-width: 640px) {

@@ -57,3 +57,30 @@ medu_close.addEventListener('click', () => {
     media_menu.classList.remove('active')
     media_menu_bg.classList.remove('active')
 })
+
+
+let modal_contact_btn = document.querySelectorAll('.modal_contact_btn');
+let modal_contact = document.querySelector('.modal_contact');
+let modal_close = document.querySelector('.modal_close');
+
+
+modal_contact_btn.forEach(btn => {
+    btn.addEventListener('click', () => {
+        modal_contact.classList.toggle('active')
+        media_menu_bg.classList.toggle('active')
+        modal_close.classList.toggle('active')
+    })
+})
+
+
+media_menu_bg.addEventListener('click', () => {
+  modal_contact.classList.remove('active')
+  media_menu_bg.classList.remove('active')
+  modal_close.classList.remove('active')
+})
+
+modal_close.addEventListener('click', () => {
+  modal_contact.classList.remove('active')
+  media_menu_bg.classList.remove('active')
+  modal_close.classList.remove('active')
+})

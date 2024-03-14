@@ -856,6 +856,9 @@ footer .footer_bottom_link a {
   footer .social_media_bottom .main_btn {
     padding: 12px 72px;
   }
+  footer .footer_link {
+    gap: 40px;
+  }
   footer .social_media_top {
     flex-direction: column;
   }

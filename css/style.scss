@@ -662,5 +662,99 @@ header {
 }
 // result 
 
+// faq
+.faq {
+    .faq_title {
+        text-align: center;
+        max-width: 558px;
+        margin: 0 auto;
+    }
+    .faq_in {
+        .accordion {
+            .accordion-item {
+                border-bottom: 1px solid #e5e5e5;
+
+                .icon {
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    @include transition();
+                }
+
+                button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+
+                &:hover {
+                    .icon {
+                        background-color: coral;
+                        img {
+                            filter: grayscale(100%) brightness(200%);
+                            -webkit-filter: grayscale(100%) brightness(200%);
+                            -moz-filter: grayscale(100%) brightness(200%);
+                        }
+                    }
+                }
+            }
+              
+            .accordion-item button[aria-expanded='true'] {
+                .icon {
+                    transform: rotate(45deg);
+                }
+            }
+              
+            button {
+                position: relative;
+                display: block;
+                text-align: left;
+                width: 100%;
+                padding: 1em 0;
+                color: #7288a2;
+                font-size: 1.15rem;
+                font-weight: 400;
+                border: none;
+                background: none;
+                outline: none;
+            }
+              
+            .accordion-title {
+                font-family: "Stolzl", "Arial", sans-serif;
+                color: rgb(0, 0, 0);
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 24.3px;
+            }
+              
+            button[aria-expanded='true'] .icon::after {
+                width: 0;
+              }
+               button[aria-expanded='true'] + .accordion-content {
+                opacity: 1;
+                max-height: 9em;
+                transition: all 200ms linear;
+                will-change: opacity, max-height;
+              }
+              .accordion-content {
+                opacity: 0;
+                max-height: 0;
+                overflow: hidden;
+                transition: opacity 200ms linear, max-height 200ms linear;
+                will-change: opacity, max-height;
+
+                p {
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                    line-height: 1.55;
+                    font-weight: 300;
+                    color: #000000;
+                }
+              }
+        }
+    }
+}
+// faq
+
 
 @import './responsive';

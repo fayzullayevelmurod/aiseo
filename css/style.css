@@ -560,6 +560,80 @@ header .burger_btn {
   border-radius: 100px;
 }
 
+.faq .faq_title {
+  text-align: center;
+  max-width: 558px;
+  margin: 0 auto;
+}
+.faq .faq_in .accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+.faq .faq_in .accordion .accordion-item .icon {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transition: 0.2s ease;
+}
+.faq .faq_in .accordion .accordion-item button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.faq .faq_in .accordion .accordion-item:hover .icon {
+  background-color: coral;
+}
+.faq .faq_in .accordion .accordion-item:hover .icon img {
+  filter: grayscale(100%) brightness(200%);
+  -webkit-filter: grayscale(100%) brightness(200%);
+  -moz-filter: grayscale(100%) brightness(200%);
+}
+.faq .faq_in .accordion .accordion-item button[aria-expanded=true] .icon {
+  transform: rotate(45deg);
+}
+.faq .faq_in .accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #7288a2;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+.faq .faq_in .accordion .accordion-title {
+  font-family: "Stolzl", "Arial", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24.3px;
+}
+.faq .faq_in .accordion button[aria-expanded=true] .icon::after {
+  width: 0;
+}
+.faq .faq_in .accordion button[aria-expanded=true] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.faq .faq_in .accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.faq .faq_in .accordion .accordion-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.55;
+  font-weight: 300;
+  color: #000000;
+}
+
 @media only screen and (max-width: 1200px) {
   .tarif .tarif_card {
     height: 796px;

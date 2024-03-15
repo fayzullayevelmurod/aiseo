@@ -1,6 +1,6 @@
 AOS.init();
 
-var swiper = new Swiper(".resultSwiper", {
+let swiper = new Swiper(".resultSwiper", {
     loop: true,
     breakpoints: {
         280: {
@@ -22,25 +22,33 @@ var swiper = new Swiper(".resultSwiper", {
     },
 });
 
-var swiper = new Swiper(".quizSwiper", {
+let swiper2 = new Swiper(".quizSwiper", {
   spaceBetween: 10,
-  // mousewheel: true,
-  // keyboard: true,
-  // cssMode: true,
+  allowTouchMove: false,
   pagination: {
     el: ".quiz-pagination",
     type: "progressbar",
   },
-  pagination: {
-    el: ".quiz-fraction",
-    type: "fraction",
-  },
+  effect: 'fade',
   navigation: {
     nextEl: ".quiz-button-next",
     prevEl: ".quiz-button-prev",
   },
-    mousewheel: true,
 });
+
+let quiz_fraction_current = document.querySelector('.quiz-fraction .current');
+let quiz_fraction_len = document.querySelector('.quiz-fraction .len');
+
+function makeFraction() {
+  quiz_fraction_current.textContent = swiper2.activeIndex + 1
+  quiz_fraction_len.textContent = swiper2.slides.length
+}
+
+makeFraction()
+
+swiper2.on('slideChange', () => {
+  makeFraction()
+})
 
 
 const items = document.querySelectorAll('.accordion button');

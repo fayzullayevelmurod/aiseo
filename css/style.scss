@@ -325,6 +325,17 @@ button {
         }
     }
 
+    .quiz-pagination {
+        
+    }
+
+    .quizSwiper {
+        .swiper-slide:not(.swiper-slide-active) {
+            height: 0;
+            overflow: hidden;
+        }
+    }
+
     .quiz_card_bottom {
         padding-top: 35px;
         @include flex-center();

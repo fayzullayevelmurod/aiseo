@@ -241,6 +241,67 @@ button {
   transform: translate(-50%, -50%) scale(1);
 }
 
+.quiz_modal {
+  width: 960px;
+  position: fixed;
+  z-index: 6;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 6;
+  padding: 35px 45px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+.quiz_modal .quiz_card_top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 35px;
+}
+.quiz_modal .quiz_card_top p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 1.55;
+  font-family: "Stolzl", Arial, sans-serif;
+  font-weight: 300;
+  color: #000000;
+}
+.quiz_modal .quiz_card_top .quiz-fraction {
+  width: auto;
+  font-size: 14px;
+  line-height: 1.55;
+  font-family: "Stolzl", Arial, sans-serif;
+  font-weight: 500;
+  color: #000000;
+}
+.quiz_modal .quiz_card_bottom {
+  padding-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.quiz_modal .quiz_card_bottom button {
+  width: 125px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 700;
+  font-family: "Stolzl", Arial, sans-serif;
+  border-radius: 100px;
+  background-color: #cbcbcb;
+}
+.quiz_modal .quiz_card_bottom .main_btn img {
+  transform: rotate(180deg);
+}
+
 header {
   background-color: white;
   padding: 14px 0;

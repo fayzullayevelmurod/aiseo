@@ -23,6 +23,10 @@ var swiper = new Swiper(".resultSwiper", {
 });
 
 var swiper = new Swiper(".quizSwiper", {
+  spaceBetween: 10,
+  // mousewheel: true,
+  // keyboard: true,
+  // cssMode: true,
   pagination: {
     el: ".quiz-pagination",
     type: "progressbar",
@@ -35,6 +39,7 @@ var swiper = new Swiper(".quizSwiper", {
     nextEl: ".quiz-button-next",
     prevEl: ".quiz-button-prev",
   },
+    mousewheel: true,
 });
 
 

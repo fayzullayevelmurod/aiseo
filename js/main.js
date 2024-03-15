@@ -22,6 +22,15 @@ let swiper = new Swiper(".resultSwiper", {
     },
 });
 
+let swiper3 = new Swiper(".card_modalSwiper", {
+    loop: true,
+    effect: 'fade',
+    navigation: {
+      nextEl: ".card_modal-button-next",
+      prevEl: ".card_modal-button-prev",
+    },
+});
+
 let swiper2 = new Swiper(".quizSwiper", {
   spaceBetween: 10,
   allowTouchMove: false,
@@ -94,11 +103,21 @@ let modal_contact = document.querySelector('.modal_contact');
 let modal_close = document.querySelector('.modal_close');
 let quiz_modal = document.querySelector('.quiz_modal');
 let quiz_modal_btn = document.querySelectorAll('.quiz_modal_btn');
+let card_modal = document.querySelector('.card_modal_wrap');
+let result_card = document.querySelectorAll('.result_card');
 
 
 modal_contact_btn.forEach(btn => {
     btn.addEventListener('click', () => {
         modal_contact.classList.toggle('active')
+        media_menu_bg.classList.toggle('active')
+        modal_close.classList.toggle('active')
+    })
+})
+
+result_card.forEach(btn3 => {
+    btn3.addEventListener('click', () => {
+        card_modal.classList.toggle('active')
         media_menu_bg.classList.toggle('active')
         modal_close.classList.toggle('active')
     })
@@ -110,6 +129,7 @@ media_menu_bg.addEventListener('click', () => {
   media_menu_bg.classList.remove('active')
   modal_close.classList.remove('active')
   quiz_modal.classList.remove('active')
+  card_modal.classList.remove('active')
 })
 
 modal_close.addEventListener('click', () => {
@@ -117,6 +137,7 @@ modal_close.addEventListener('click', () => {
   media_menu_bg.classList.remove('active')
   modal_close.classList.remove('active')
   quiz_modal.classList.remove('active')
+  card_modal.classList.remove('active')
 })
 
 

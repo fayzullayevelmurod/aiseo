@@ -298,6 +298,20 @@
         }
     }
 
+    .card_modal_wrap {
+        width: 100%;
+        padding: 0;
+
+        .card_modal {
+            border-radius: 0;
+            border-top: 60px solid #000;
+
+            .card_modal_content {
+                padding: 20px 0;
+            }
+        }
+    }
+
     .video {
         padding: 60px 0 40px 0;
         .video_in {

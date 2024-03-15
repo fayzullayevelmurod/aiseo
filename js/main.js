@@ -22,6 +22,18 @@ var swiper = new Swiper(".resultSwiper", {
     },
 });
 
+var swiper = new Swiper(".quizSwiper", {
+  pagination: {
+    el: ".quiz-pagination",
+    type: "progressbar",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".quiz-button-next",
+    prevEl: ".quiz-button-prev",
+  },
+});
+
 
 const items = document.querySelectorAll('.accordion button');
 

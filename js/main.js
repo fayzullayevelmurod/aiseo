@@ -26,6 +26,9 @@ var swiper = new Swiper(".quizSwiper", {
   pagination: {
     el: ".quiz-pagination",
     type: "progressbar",
+  },
+  pagination: {
+    el: ".quiz-fraction",
     type: "fraction",
   },
   navigation: {

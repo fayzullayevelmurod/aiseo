@@ -92,6 +92,8 @@ medu_close.addEventListener('click', () => {
 let modal_contact_btn = document.querySelectorAll('.modal_contact_btn');
 let modal_contact = document.querySelector('.modal_contact');
 let modal_close = document.querySelector('.modal_close');
+let quiz_modal = document.querySelector('.quiz_modal');
+let quiz_modal_btn = document.querySelectorAll('.quiz_modal_btn');
 
 
 modal_contact_btn.forEach(btn => {
@@ -107,10 +109,23 @@ media_menu_bg.addEventListener('click', () => {
   modal_contact.classList.remove('active')
   media_menu_bg.classList.remove('active')
   modal_close.classList.remove('active')
+  quiz_modal.classList.remove('active')
 })
 
 modal_close.addEventListener('click', () => {
   modal_contact.classList.remove('active')
   media_menu_bg.classList.remove('active')
   modal_close.classList.remove('active')
+  quiz_modal.classList.remove('active')
+})
+
+
+
+
+quiz_modal_btn.forEach(btn2 => {
+    btn2.addEventListener('click', () => {
+        quiz_modal.classList.add('active')
+        media_menu_bg.classList.toggle('active')
+        modal_close.classList.toggle('active')
+    })
 })
